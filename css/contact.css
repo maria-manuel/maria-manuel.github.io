@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Lobster+Two&family=Montserrat&family=Playfair+Display&family=Poiret+One&display=swap');
+
+.contact {
+    background-color: #67a89b;
+    color: darkgray;
+    font-size: 25px;
+}
+
+.button {
+    background-color: #67a89b;
+    color: darkgray;
+}
+
+h1 {
+    justify-content: center;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    color: green
+}
+
+.top-banner {
+        background-color: #67a89b;
+        font-family: "Lobster Two", "cursive";
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        color: green;
+        text-align: center;
+    }
+
+span {
+        background-color: #67a89b;
+    }
+
+h1 {
+        justify-content: center;
+        text-align: left;
+        font-family: "Montserrat", sans-serif;
+        color: green
+    }
+
+body {
+        font-family: "Playfair Display", "serif";
+        color: yellow;
+    }    
+
+form {
+        color: purple;
+    }
+
+.warrior {
+    background-color: #6e6570;
+    background: yellow;
+    color: blue;
+}
+
+input {
+    color: red;
+  }
