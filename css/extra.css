@@ -41,3 +41,11 @@ input {
     border-width: 20px;
 }
 
+.shadow-border {
+
+}
+
+.shadow-text {
+    text-shadow: 5px 4px 5px rgba(164,151,151,0.64);
+}
+
