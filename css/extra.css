@@ -38,6 +38,7 @@ input {
 
 .shadow-img {
     box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.35);
+    border-color: rgb(0,35,102);
     border-width: 20px;
     color: rgb(0,35,102)
 }
