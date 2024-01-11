@@ -65,3 +65,11 @@ input {
     text-shadow: 1px -1px 1px;
     transition:all 0.3s;
 } 
+
+.centered-iframe {
+        display: flex;
+        justify-content: center;
+        vertical-align: middle;
+        align-items: center;
+    }
+
