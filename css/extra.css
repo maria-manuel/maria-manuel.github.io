@@ -73,3 +73,6 @@ input {
         align-items: center;
     }
 
+.pad-left {
+    padding-left: 15px;
+}
