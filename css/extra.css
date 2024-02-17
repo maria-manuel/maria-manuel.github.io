@@ -77,6 +77,10 @@ input {
     padding-left: 15px;
 }
 
+.pad-btm {
+    padding-bottom: 20px;
+}
+
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
     float: left;
