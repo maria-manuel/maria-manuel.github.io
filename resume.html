@@ -105,13 +105,23 @@
                     </script>
 -->
 
-
+<!--
         <script>
             document.getElementById("theFrame").contentWindow.onload = function() 
             { 
                 this.document.getElementsByTagName("img")[0].style.width="100%";
-                this.document.getElementsByTagName("img")[1].style.display = "block";
             };
+        </script>
+-->
+        <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.16.105/build/pdf.min.js"></script>
+
+        <script>
+            const pdfViewer = document.getElementById('pdf-viewer');
+            pdfjsLib.getDocument('assets/img/resumeIT.pdf').then(function(pdf) {
+            const page1 = pdf.getPage(1);
+            const page2 = pdf.getPage(2);
+        // Render and display both pages using PDF.js functions
+        });
         </script>
 
         </div>       
