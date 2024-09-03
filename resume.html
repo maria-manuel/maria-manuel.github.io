@@ -56,24 +56,35 @@
                           width="100%"
                           height="678px"
                         >
-                    
+                    <!--
                     <iframe
                             class="centered-iframe"
                             src='assets/img/resumeIT.pdf'
                             width="100%"
                             height="678px"
                           >
-                          <p>This browser does not support PDF!</p>
-                          <p>To Download the PDF, click <a href="assets/img/resumeIT.pdf">here</a>.</p>
+
                     </iframe>
+                    -->
+
+                    <iframe 
+                        id="theFrame" 
+                        src="assets/img/resumeIT.pdf" 
+                        style="height:1000px; width:100%;">
+                        <p>This browser does not support PDF!</p>
+                        <p>To Download the PDF, click <a href="assets/img/resumeIT.pdf">here</a>.</p>
+                    </iframe>
+
                     </object>
 
-                    <iframe id="theFrame" src="assets/img/resumeIT.pdf" style="height:1000px; width:100%;"></iframe>
-<script>
-document.getElementById("theFrame").contentWindow.onload = function() {
-    this.document.getElementsByTagName("img")[0].style.width="100%";
-};
-</script>
+
+        <script>
+            document.getElementById("theFrame").contentWindow.onload = function() 
+            { 
+                this.document.getElementsByTagName("img")[0].style.width="100%";
+            };
+        </script>
+
                 </div>       
             </section>
             <!-- <hr class="m-0" /> -->
