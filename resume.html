@@ -76,27 +76,7 @@
                     </iframe>
 
                     </object>
-
-                    <script>
-                        window.onload = function() {
-                            const frame = document.getElementById("theFrame");
-                            const frameDoc = frame.contentDocument;
-                
-                            // Wait for the frame content to load completely
-                            frameDoc.addEventListener('load', () => {
-                                // Find the second page (assuming it's the second child element)
-                                const secondPage = frameDoc.body.children[1];
-                
-                                // Make the second page visible
-                                secondPage.style.display = 'block';
-                
-                                // Scroll to the second page (optional)
-                                frame.scrollTo(0, secondPage.offsetTop);
-                            });
-                        };
-                    </script>
-
-                    <!--
+<!--
                     <script>
                         window.onload = function() {
                             const frame = document.getElementById("theFrame");
@@ -123,16 +103,17 @@
                         secondPage.style.display = "block";
                         }
                     </script>
-                    -->
-<!--
+-->
+
+
         <script>
             document.getElementById("theFrame").contentWindow.onload = function() 
             { 
                 this.document.getElementsByTagName("img")[0].style.width="100%";
             };
         </script>
--->
-                </div>       
+
+</div>       
             </section>
             <!-- <hr class="m-0" /> -->
 
