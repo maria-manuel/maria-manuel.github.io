@@ -66,23 +66,13 @@
                     </iframe>
                     </object>
 
-                    <script>
-                        document.getElementById("theFrame").contentWindow.onload = function() {
-                          // Ensure the iframe's height is adjusted to fit the PDF content
-                          this.document.body.style.height = "100%";
-                          // Adjust the iframe's height to match the PDF's height
-                          this.document.body.style.height = this.document.body.scrollHeight + "px";
-                        };
-                    </script>
-
-                    <!--
         <script>
             document.getElementById("theFrame").contentWindow.onload = function() 
             { 
                 this.document.getElementsByTagName("img")[0].style.width="100%";
             };
         </script>
--->
+
         </div>       
             </section>
             <!-- <hr class="m-0" /> -->
