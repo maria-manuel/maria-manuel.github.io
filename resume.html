@@ -76,15 +76,39 @@
                     </iframe>
 
                     </object>
-
-
+                    <script>
+                        window.onload = function() {
+                            const frame = document.getElementById("theFrame");
+                            const frameDoc = frame.contentDocument;
+                
+                            // Ensure the frame content is loaded before manipulating it
+                            if (frameDoc.readyState === 'complete') {
+                                handleFrameContent(frameDoc);
+                            } else {
+                                frame.onload = function() {
+                                    handleFrameContent(frameDoc);
+                                };
+                            }
+                        };
+                
+                        function handleFrameContent(frameDoc) {
+                            const images = frameDoc.getElementsByTagName("img");
+                            for (let i = 0; i < images.length; i++) {
+                                images[i].style.width = "100%";
+                            }
+                
+                            // Logic to display the second page (if applicable)
+                            // ... (Your code to navigate to the second page goes here)
+                        }
+                    </script>
+<!--
         <script>
             document.getElementById("theFrame").contentWindow.onload = function() 
             { 
                 this.document.getElementsByTagName("img")[0].style.width="100%";
             };
         </script>
-
+-->
                 </div>       
             </section>
             <!-- <hr class="m-0" /> -->
